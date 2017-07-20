@@ -1,0 +1,15 @@
+body * {
+	box-sizing: border-box;
+}
+
+/********* 
+	Override default styling for bootstrap
+**********/
+.navbar-default {
+	background: transparent;
+	border-bottom: none;
+}
+
+/*******
+static pages styling 
+********/
