@@ -130,6 +130,22 @@ div.welcome-page {
 	color: white;
 }
 
+.about-button-container {
+	text-align: center;
+}
+
+button.about-button {
+	background: transparent;
+	width: 25%;
+	margin-top: 45px;
+	border: 0;
+	font-size: 20px;
+}
+
+button.about-button > span.about-down {
+	color: white;
+}
+
 @media screen and (min-width: 768px) {
 	#home-navbar li {
 		font-size: 1.2em;
@@ -165,6 +181,11 @@ div.welcome-page {
 
 	.first-about {
 		padding-left: 30px;
+	}
+
+	button.about-button {
+		width: 15%;
+		margin-top: 50px;
 	}
 }
 
