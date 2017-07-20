@@ -13,25 +13,19 @@ main, nav {
 /********* 
 	Override default styling for bootstrap
 **********/
-nav.home-navbar {
+nav.home-navbar, nav.unauthenticated-navbar {
 	background: transparent;
 	border: 0;
 	z-index: 1000;
 }
 
-nav.unauthenticated-navbar {
-	background: transparent;
-	margin-bottom: 0;
-}
-
 ul#home-nav-list a {
-	color: white;
 	position: relative;
 	text-decoration: none;
 }
 
-div.unauthenticated-collapse > ul.unauthenticated-nav-list a {
-	color: black;
+ul#home-nav-list a, div.unauthenticated-collapse > ul.unauthenticated-nav-list a {
+	color: white;
 }
 
 /** Below we use direct child for the second ruleset of div.una..... for speficity **/
@@ -62,16 +56,17 @@ ul#home-nav-list a:hover:before, ul.unauthenticated-nav-list a:hover:before {
   transform: scaleX(1);
 }
 
-div.unauthenticated-collapse > ul.unauthenticated-nav-list {
-	margin-top: 25px;
-}
 
 /*******
 static pages styling 
 ********/
 .logo {
-	height: 100px;
-	width: 100px;
+	height: 50px;
+	width: 50px;
+}
+
+span.call-tag {
+	color: white;
 }
 
 .outer {
@@ -80,13 +75,6 @@ static pages styling
 	height: 100%;
 	position: absolute;
 	top: 0px;
-	background: linear-gradient(
-      				rgba(0, 0, 0, 0.8),
-      				rgba(0, 0, 0, 0.8)
-    			),
-				url('../images/home_background.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 .inner {
@@ -94,12 +82,33 @@ static pages styling
 	vertical-align: middle;
 }
 
+.home-outer {
+	background: linear-gradient(
+      				rgba(0, 0, 0, 0.8),
+      				rgba(0, 0, 0, 0.8)
+    			),
+				url('../images/home_background.jpg');
+}
+
+.about-outer {
+	background: linear-gradient(
+      				rgba(0, 0, 0, 0.8),
+      				rgba(0, 0, 0, 0.8)
+    			),
+				url('../images/about-background.jpg');	
+}
+
+.home-outer, .about-outer {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 div.welcome-page {
 	text-align: center;
 	color: white;
 }
 
-.main-welcoming {
+.main-welcoming, .about-intro {
 	font-size: 3em;
 }
 
@@ -116,12 +125,17 @@ div.welcome-page {
 	background-color: #586300;
 }
 
+.first-about {
+	padding-left: 15px;
+	color: white;
+}
+
 @media screen and (min-width: 768px) {
 	#home-navbar li {
 		font-size: 1.2em;
 	}
 
-	.main-welcoming {
+	.main-welcoming, .about-intro {
 		font-size: 5em;
 	}
 
@@ -129,15 +143,45 @@ div.welcome-page {
 		font-size: 2.5em;
 	}
 
+	.about-sub-intro {
+		font-size: 1.75em; 
+	}
+
 	.find-out-more {
 		width: 25%;
 		height: 40px;
 		margin-top: 25px;	
+	}
+
+	div.unauthenticated-collapse > ul.unauthenticated-nav-list {
+		height: 50px;
+	}
+
+	span.call-tag {
+		font-size: 1.5em;
+		margin-left: 20px;
+		color: white;
+	}
+
+	.first-about {
+		padding-left: 30px;
 	}
 }
 
 @media screen and (min-width: 1200px) {
 	.sub-welcoming {
 		font-size: 3em;
+	}
+
+	.about-sub-intro {
+		font-size: 2em;
+	}
+
+	ul#home-nav-list, div.unauthenticated-collapse > ul.unauthenticated-nav-list {
+		margin-right: 125px;
+	}
+
+	nav > div.container-fluid .navbar-header {
+		margin-left: 100px;
 	}
 }
