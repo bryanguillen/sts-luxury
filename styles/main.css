@@ -6,30 +6,41 @@ html {
 	height: 100vh;
 }
 
-body, nav {
+main, nav {
 	font-family: 'Raleway', sans-serif;
 }
 
 /********* 
 	Override default styling for bootstrap
 **********/
-.navbar-default {
+nav.home-navbar {
 	background: transparent;
 	border: 0;
 	z-index: 1000;
 }
 
-ul#home-navbar a {
+nav.unauthenticated-navbar {
+	background: transparent;
+	margin-bottom: 0;
+}
+
+ul#home-nav-list a {
 	color: white;
 	position: relative;
 	text-decoration: none;
 }
 
-ul#home-navbar a:hover {
-	color: white;
+div.unauthenticated-collapse > ul.unauthenticated-nav-list a {
+	color: black;
 }
 
-ul#home-navbar a:before {
+/** Below we use direct child for the second ruleset of div.una..... for speficity **/
+ul#home-nav-list a:hover, div.unauthenticated-collapse > ul.unauthenticated-nav-list a:hover {
+	color: #e3ff00;
+	background: transparent;
+}
+
+ul#home-nav-list a:before, ul.unauthenticated-nav-list a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -42,18 +53,27 @@ ul#home-navbar a:before {
   transform: scaleX(0);
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
-  border: 1px solid white;
+  border: 1px solid #e3ff00;
 }
 
-ul#home-navbar a:hover:before {
+ul#home-nav-list a:hover:before, ul.unauthenticated-nav-list a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
 
+div.unauthenticated-collapse > ul.unauthenticated-nav-list {
+	margin-top: 25px;
+}
+
 /*******
 static pages styling 
 ********/
+.logo {
+	height: 100px;
+	width: 100px;
+}
+
 .outer {
 	display: table;
 	width: 100%;
@@ -85,7 +105,7 @@ div.welcome-page {
 
 .find-out-more {
 	color: black;
-	background-color: #bdd400;
+	background-color: #e3ff00;
 	border: 0;
 	margin-top: 20px;
 	width: 40%;

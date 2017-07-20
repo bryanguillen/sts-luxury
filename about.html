@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Home | STS Luxury</title>
+	<title>About | STS Luxury</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -10,9 +10,8 @@
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 <body>
-	
-	<nav class="navbar navbar-default home-navbar">
-  		<div class="container-fluid">
+	<nav class="navbar navbar-default unauthenticated-navbar">
+		<div class="container-fluid">
     		<div class="navbar-header">
       			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         		<span class="sr-only">Toggle navigation</span>
@@ -20,11 +19,12 @@
         		<span class="icon-bar"></span>
         		<span class="icon-bar"></span>
       			</button>
+      			<a href="index.html"><img src="images/sts-brand.png" class="logo"></a>
     		</div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      			<ul class="nav navbar-nav navbar-right" id="home-nav-list">
+    		<div class="collapse navbar-collapse unauthenticated-collapse" id="bs-example-navbar-collapse-1">
+      			<ul class="nav navbar-nav navbar-right unauthenticated-nav-list"><!-- all static pgs except the home page -->
         			<li><a href="#">Home</a></li>
         			<li><a href="#">About</a></li>
         			<li><a href="#">Contact</a></li>
@@ -33,31 +33,16 @@
     		</div><!-- /.navbar-collapse -->
   		</div><!-- /.container-fluid -->
 	</nav>
-	
-	<main>
-		<!-- outer & inner used for vertical centering -->
-		<div class="outer">
-			<div class="inner">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-md-12 welcome-page main-welcoming">
-							<span>STS Luxury</span>
-						</div><!-- col -->
-					</div><!-- row -->
-					<div class="row">
-						<div class="col-md-12 welcome-page sub-welcoming">
-							<span>Lorem Ipsum Lorem Ipsum Lorem Ipsum</span>
-						</div><!-- col -->
-					</div><!-- row -->
-					<div class="row">
-						<div class="col-md-12 welcome-page">
-							<button class="find-out-more">Find Out More</button>
-						</div><!-- col -->
-					</div><!-- row -->
-				</div><!-- continer -->
-			</div><!-- inner -->
-		<div><!-- outer -->
-	</main>
+
+	<!-- <main>
+		<div class="container-fluid">
+			<div class="row first-about">
+				<div class="col-md-6">
+					<img src="images/sts-brand.png">
+				</div>
+			</div>
+		</div>		
+	</main> -->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
