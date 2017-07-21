@@ -166,6 +166,10 @@ button.black-about-button > span.about-down {
 	display: none;
 }
 
+.who-section-contact {
+	display: none;
+}
+
 .three-selling-points {
 	padding-top: 20px;
 	background-color: #ffe200;
@@ -263,6 +267,21 @@ button.black-about-button > span.about-down {
 
 	#second-about-button {
 		display: inline;
+	}
+
+
+	.who-section-contact {
+		display: inline-block;
+		width: 15%;
+		height: 30px;
+		border: 0;
+		color: #373737;
+		background-color: #ffe200;
+		margin-top: 25px;
+	}
+
+	.who-section-contact:hover {
+		background-color: #586300;
 	}
 
 	.three-selling-points {
