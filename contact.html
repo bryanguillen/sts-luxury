@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contact | STS Luxury</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+	
+	<nav class="navbar navbar-default unauthenticated-navbar">
+		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        		<span class="sr-only">Toggle navigation</span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+      			</button>
+      			<a href="index.html"><img src="images/sts-brand.png" class="logo"></a>
+      			<span class="call-tag">Call 777-777-7777 (Se Habla Espa&#241ol)</span>
+    		</div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    		<div class="collapse navbar-collapse unauthenticated-collapse" id="bs-example-navbar-collapse-1">
+      			<ul class="nav navbar-nav navbar-right unauthenticated-nav-list"><!-- all static pgs except the home page -->
+        			<li><a href="index.html">Home</a></li>
+        			<li><a href="about.html">About</a></li>
+        			<li><a href="contact.html">Contact</a></li>
+        			<li><a href="login.html">Login</a></li>
+      			</ul>
+    		</div><!-- /.navbar-collapse -->
+  		</div><!-- /.container-fluid -->
+	</nav>
+
+	<main>
+		<div class="outer contact-outer">
+			<div class="inner">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="contact-container">
+							<div class="form-heading">
+								<div class="form-title"><span>Contact Us</span></div>
+								<div class="form-logo"><img src="images/sts-brand.png"></div>
+							</div>
+							<div class="contact-form-container">
+								<form class="contact-form">
+									<fieldset name="contact-sts">
+										<table>
+											<tr>
+												<td><label for="email">Email</label></td>
+												<td><input type="text" name="email" placeholder="foo@bar.com" required/></td>
+											</tr>
+											<tr>
+												<td><label for="first-name">First Name</label></td>
+												<td><input type="text" name="first-name" placeholder="John" required/></td>
+											</tr>
+											<tr>
+												<td><label for="subject-line">Subject</label></td>
+												<td><input type="text" name="subject-line" placeholder="Inquiry" required/></td>
+											</tr>
+											<tr>
+												<td><label for="message">Message</label></td>
+												<td><textarea name="message" placeholder="I am interested in your services. Tell me more!"></textarea></td>
+											</tr>
+										</table>
+									</fieldset>
+									<div class="contact-button-container"><button class="submit-contact" type="submit">Send</button></div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</main>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/unauthorizedClient.js"></script>
+</body>
+</html>

@@ -6,6 +6,10 @@ main, nav {
 	font-family: 'Raleway', sans-serif;
 }
 
+form, fieldset, input {
+	border: 0;
+}
+
 /********* 
 	Override default styling for bootstrap
 **********/
@@ -221,6 +225,82 @@ button.black-about-button > span.about-down {
 	color: #ffe200;
 }
 
+.contact-outer {
+	background: #373737;
+	color: white;
+	width: 100vw;
+}
+
+.contact-container {
+	background: white;
+	margin: 0 auto;
+	width: 100%;
+	padding-left: 15px;
+	padding-bottom: 30px;
+}
+
+.form-heading {
+	font-size: 0;
+}
+
+.form-title > span {
+	color: black;
+	font-size: 20px;
+}
+
+.form-logo {
+	padding-top: 25px;
+	padding-bottom: 25px; 	
+}
+
+.form-logo > img {
+	width: 75px;
+	height: 75px;
+}
+
+.form-title, .form-logo {
+	display: inline-block;
+	width: 50%;
+	height: 100px;
+	text-align: center;
+}
+
+form.contact-form tr {
+	height: 20px; 
+}
+
+form.contact-form label {
+	color: black;
+	width: 100px;
+}
+
+form.contact-form textarea {
+	border: 0;
+}
+
+form.contact-form label, form.contact-form input {
+	margin-bottom: 10px;
+}
+
+form.contact-form input, form.contact-form textarea {
+	border-bottom: 1px solid black;
+	color: black;
+	padding: 10px 10px;
+}
+
+form.contact-form button {
+	color: black;
+	border: 0;
+	background: #ffe200;
+	width: 30%;
+	height: 35px;
+}
+
+.contact-button-container {
+	text-align: center;
+	margin-top: 20px;
+}
+
 @media screen and (min-width: 768px) {
 	#home-navbar li {
 		font-size: 1.2em;
@@ -292,6 +372,14 @@ button.black-about-button > span.about-down {
 		padding-right: 35px;
 	}
 
+	.contact-container {
+		width: 40%;
+	}
+
+	form.contact-form button {
+		width: 35%;
+	}
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -320,4 +408,14 @@ button.black-about-button > span.about-down {
 	.selling-point-description {
 		font-size: 1.50em;
 	}
+
+	.contact-form-container {
+		width: 65%;
+		margin: 0 auto;
+	}
+
+	form.contact-form textarea {
+		width: 250px;
+	}
+
 }
