@@ -2,10 +2,6 @@ body * {
 	box-sizing: border-box;
 }
 
-html {
-	height: 100vh;
-}
-
 main, nav {
 	font-family: 'Raleway', sans-serif;
 }
@@ -17,6 +13,8 @@ nav.home-navbar, nav.unauthenticated-navbar {
 	background: transparent;
 	border: 0;
 	z-index: 1000;
+	position: absolute;
+	width: 100%;
 }
 
 ul#home-nav-list a {
@@ -30,7 +28,7 @@ ul#home-nav-list a, div.unauthenticated-collapse > ul.unauthenticated-nav-list a
 
 /** Below we use direct child for the second ruleset of div.una..... for speficity **/
 ul#home-nav-list a:hover, div.unauthenticated-collapse > ul.unauthenticated-nav-list a:hover {
-	color: #e3ff00;
+	color: #ffe200;
 	background: transparent;
 }
 
@@ -47,7 +45,7 @@ ul#home-nav-list a:before, ul.unauthenticated-nav-list a:before {
   transform: scaleX(0);
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
-  border: 1px solid #e3ff00;
+  border: 1px solid #ffe200;
 }
 
 ul#home-nav-list a:hover:before, ul.unauthenticated-nav-list a:hover:before {
@@ -71,10 +69,7 @@ span.call-tag {
 
 .outer {
 	display: table;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0px;
+	height: 100vh;
 }
 
 .inner {
@@ -88,6 +83,7 @@ span.call-tag {
       				rgba(0, 0, 0, 0.8)
     			),
 				url('../images/home_background.jpg');
+	width: 100vw;
 }
 
 .about-outer {
@@ -108,13 +104,13 @@ div.welcome-page {
 	color: white;
 }
 
-.main-welcoming, .about-intro {
+.main-welcoming, .about-intro, .first-half-title {
 	font-size: 3em;
 }
 
 .find-out-more {
 	color: black;
-	background-color: #e3ff00;
+	background-color: #ffe200;
 	border: 0;
 	margin-top: 20px;
 	width: 40%;
@@ -146,12 +142,63 @@ button.about-button > span.about-down {
 	color: white;
 }
 
+button.black-about-button > span.about-down {
+	color: black;
+}
+
+.about-first-half {
+	border-top: 20px solid #373737;
+	text-align: center;
+	padding-top: 40px;
+}
+
+.who-section-logo {
+	height: 350px;
+	width: 350px;
+}
+
+.who-section-description {
+	font-weight: bold;
+}
+
+.three-selling-points {
+	padding-top: 20px;
+	background-color: #ffe200;
+	color: #373737;
+}
+
+.selling-point {
+	text-align: center;
+}
+
+.selling-point-title, .selling-point-glyphicon, .selling-point-description {
+	margin-bottom: 15px;
+}
+
+.selling-point-title {
+	font-size: 1.65em;
+}
+
+.selling-point-glyphicon {
+	background-color: #373737;
+	color: white;
+	height: 65px;
+	width: 65px;
+	border-radius: 100%;
+	font-size: 30px;
+	padding-top: 14.5px;
+}
+
+.selling-point-description {
+	font-size: 1.25em;
+}
+
 @media screen and (min-width: 768px) {
 	#home-navbar li {
 		font-size: 1.2em;
 	}
 
-	.main-welcoming, .about-intro {
+	.main-welcoming, .about-intro, .first-half-title {
 		font-size: 5em;
 	}
 
@@ -179,14 +226,19 @@ button.about-button > span.about-down {
 		color: white;
 	}
 
-	.first-about {
-		padding-left: 30px;
-	}
-
 	button.about-button {
 		width: 15%;
 		margin-top: 50px;
 	}
+
+	.about-first-half {
+		height: 100vh;
+	}
+
+	.three-selling-points {
+		padding: 50px 0px;
+	}
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -204,5 +256,15 @@ button.about-button > span.about-down {
 
 	nav > div.container-fluid .navbar-header {
 		margin-left: 100px;
+	}
+
+
+	.selling-point-title {
+		font-size: 2em;
+	}
+
+
+	.selling-point-description {
+		font-size: 1.50em;
 	}
 }
