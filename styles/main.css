@@ -150,6 +150,7 @@ button.black-about-button > span.about-down {
 	border-top: 20px solid #373737;
 	text-align: center;
 	padding-top: 40px;
+	padding-bottom: 20px;
 }
 
 .who-section-logo {
@@ -159,6 +160,10 @@ button.black-about-button > span.about-down {
 
 .who-section-description {
 	font-weight: bold;
+}
+
+#second-about-button {
+	display: none;
 }
 
 .three-selling-points {
@@ -191,6 +196,25 @@ button.black-about-button > span.about-down {
 
 .selling-point-description {
 	font-size: 1.25em;
+}
+
+.footer {
+	background-color: #373737;
+	padding: 20px 15px;
+	color: white; 
+}
+
+.footer-links {
+	text-align: right;
+}
+
+.footer-links a {
+	color: white;
+	text-decoration: none;
+}
+
+.footer-links a:hover {
+	color: #ffe200;
 }
 
 @media screen and (min-width: 768px) {
@@ -233,10 +257,20 @@ button.black-about-button > span.about-down {
 
 	.about-first-half {
 		height: 100vh;
+		padding-bottom: 0px;
+	}
+
+
+	#second-about-button {
+		display: inline;
 	}
 
 	.three-selling-points {
 		padding: 50px 0px;
+	}
+
+	.footer-links {
+		padding-right: 35px;
 	}
 
 }
