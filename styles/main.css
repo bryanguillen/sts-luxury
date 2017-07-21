@@ -229,6 +229,11 @@ button.black-about-button > span.about-down {
 	background: #373737;
 	color: white;
 	width: 100vw;
+	background: linear-gradient(
+      				rgba(0, 0, 0, 0.8),
+      				rgba(0, 0, 0, 0.8)
+    			),
+				url('../images/about-background.jpg');	
 }
 
 .contact-container {
@@ -283,9 +288,12 @@ form.contact-form label, form.contact-form input {
 }
 
 form.contact-form input, form.contact-form textarea {
-	border-bottom: 1px solid black;
 	color: black;
 	padding: 10px 10px;
+}
+
+form.contact-form input {
+	border-bottom: 1px solid black;
 }
 
 form.contact-form button {
