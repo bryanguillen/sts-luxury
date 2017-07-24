@@ -13,12 +13,10 @@ form, fieldset, input {
 /********* 
 	Override default styling for bootstrap
 **********/
-nav.home-navbar, nav.unauthenticated-navbar {
-	background: transparent;
-	border: 0;
-	z-index: 1000;
-	position: absolute;
-	width: 100%;
+nav.unauthenticated-navbar {
+	background: white;
+	color: black;
+	margin-bottom: 0;
 }
 
 ul#home-nav-list a {
@@ -27,10 +25,10 @@ ul#home-nav-list a {
 }
 
 ul#home-nav-list a, div.unauthenticated-collapse > ul.unauthenticated-nav-list a {
-	color: white;
+	color: black;
 }
 
-/** Below we use direct child for the second ruleset of div.una..... for speficity **/
+/** Below we use direct child for the second ruleset of div.unauthenticated..... for speficity **/
 ul#home-nav-list a:hover, div.unauthenticated-collapse > ul.unauthenticated-nav-list a:hover {
 	color: #ffe200;
 	background: transparent;
@@ -58,6 +56,24 @@ ul#home-nav-list a:hover:before, ul.unauthenticated-nav-list a:hover:before {
   transform: scaleX(1);
 }
 
+div.home-jumbotron-container {
+	padding: 0;
+	background: linear-gradient(
+      				rgba(0, 0, 0, 0.5),
+      				rgba(0, 0, 0, 0.5)
+    			),
+				url('../images/jumbotron-mobile.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+div.home-jumbotron {
+	background: transparent;
+	color: white;
+	height: 400px;
+	margin-bottom: 0px;
+}
 
 /*******
 static pages styling 
@@ -67,13 +83,9 @@ static pages styling
 	width: 50px;
 }
 
-span.call-tag {
-	color: white;
-}
-
 .outer {
 	display: table;
-	height: 100vh;
+	height: 100%;
 }
 
 .inner {
@@ -81,57 +93,33 @@ span.call-tag {
 	vertical-align: middle;
 }
 
-.home-outer {
-	background: linear-gradient(
-      				rgba(0, 0, 0, 0.8),
-      				rgba(0, 0, 0, 0.8)
-    			),
-				url('../images/home_background.jpg');
-	width: 100vw;
+.jumbotron-heading-container {
+	margin-bottom: 10px;
 }
 
-.about-outer {
-	background: linear-gradient(
-      				rgba(0, 0, 0, 0.8),
-      				rgba(0, 0, 0, 0.8)
-    			),
-				url('../images/about-background.jpg');	
+.jumbotron-heading {
+	font-size: 2em;
 }
 
-.home-outer, .about-outer {
-	background-size: cover;
-	background-repeat: no-repeat;
+.jumbotron-subheading {
+	font-size: 1.25em;
 }
 
-div.welcome-page {
+.learn-more-container {
 	text-align: center;
-	color: white;
 }
 
-.main-welcoming, .about-intro, .first-half-title {
-	font-size: 3em;
-}
-
-.find-out-more {
+.learn-more {
 	color: black;
 	background-color: #ffe200;
 	border: 0;
-	margin-top: 20px;
 	width: 40%;
 	height: 30px;
+	margin-top: 20px;
 }
 
-.find-out-more:hover {
+.learn-more:hover {
 	background-color: #586300;
-}
-
-.first-about {
-	padding-left: 15px;
-	color: white;
-}
-
-.about-button-container {
-	text-align: center;
 }
 
 button.about-button {
@@ -150,8 +138,7 @@ button.black-about-button > span.about-down {
 	color: black;
 }
 
-.about-first-half {
-	border-top: 20px solid #373737;
+.who-we-are {
 	text-align: center;
 	padding-top: 40px;
 	padding-bottom: 50px;
@@ -164,6 +151,10 @@ button.black-about-button > span.about-down {
 
 .who-section-description {
 	font-weight: bold;
+}
+
+.who-we-title {
+	font-size: 2em;
 }
 
 #second-about-button {
@@ -314,16 +305,35 @@ form.contact-form button {
 		font-size: 1.2em;
 	}
 
-	.main-welcoming, .about-intro, .first-half-title {
+	div.home-jumbotron-container {
+		background: linear-gradient(
+      				rgba(0, 0, 0, 0.7),
+      				rgba(0, 0, 0, 0.7)
+    			), 
+				url('../images/jumbotron.jpg');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}	
+
+	div.home-jumbotron {
+		height: 500px;
+	}
+
+	.learn-more-container {
+		text-align: left;
+	}
+
+	.jumbotron-heading {
+		font-size: 3.5em;
+	}
+
+	.jumbotron-subheading {
+		font-size: 2em;
+	}
+
+	.main-welcoming, .about-intro, .who-we-are > span {
 		font-size: 5em;
-	}
-
-	.sub-welcoming {
-		font-size: 2.5em;
-	}
-
-	.about-sub-intro {
-		font-size: 1.75em; 
 	}
 
 	.find-out-more {
@@ -339,7 +349,6 @@ form.contact-form button {
 	span.call-tag {
 		font-size: 1.5em;
 		margin-left: 20px;
-		color: white;
 	}
 
 	button.about-button {
@@ -347,13 +356,16 @@ form.contact-form button {
 		margin-top: 50px;
 	}
 
-	.about-first-half {
+	.who-we-are {
 		height: 100vh;
 		padding-bottom: 0px;
 	}
 
+	.who-we-title {
+		font-size: 4.5em;
+	}
 
-	#second-about-button {
+	#goto-selling-points {
 		display: inline;
 	}
 
