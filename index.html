@@ -10,9 +10,9 @@
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 <body>
-	
-	<nav class="navbar navbar-default home-navbar">
-  		<div class="container-fluid">
+
+	<nav class="navbar navbar-default unauthenticated-navbar">
+		<div class="container-fluid">
     		<div class="navbar-header">
       			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         		<span class="sr-only">Toggle navigation</span>
@@ -20,11 +20,13 @@
         		<span class="icon-bar"></span>
         		<span class="icon-bar"></span>
       			</button>
+      			<a href="index.html"><img src="images/sts-brand.png" class="logo"></a>
+      			<span class="call-tag">Call 777-777-7777 (Se Habla Espa&#241ol)</span>
     		</div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      			<ul class="nav navbar-nav navbar-right" id="home-nav-list">
+    		<div class="collapse navbar-collapse unauthenticated-collapse" id="bs-example-navbar-collapse-1">
+      			<ul class="nav navbar-nav navbar-right unauthenticated-nav-list"><!-- all static pgs except the home page -->
         			<li><a href="index.html">Home</a></li>
         			<li><a href="about.html">About</a></li>
         			<li><a href="contact.html">Contact</a></li>
@@ -35,31 +37,96 @@
 	</nav>
 	
 	<main>
-		<!-- outer & inner used for vertical centering -->
-		<div class="outer home-outer">
-			<div class="inner">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-md-12 welcome-page main-welcoming">
-							<span>STS Luxury</span>
-						</div><!-- col -->
-					</div><!-- row -->
-					<div class="row">
-						<div class="col-md-12 welcome-page sub-welcoming">
-							<span>Lorem Ipsum Lorem Ipsum Lorem Ipsum</span>
-						</div><!-- col -->
-					</div><!-- row -->
-					<div class="row">
-						<div class="col-md-12 welcome-page">
-							<a href="about.html"><button class="find-out-more">Find Out More</button></a>
-						</div><!-- col -->
-					</div><!-- row -->
-				</div><!-- continer -->
-			</div><!-- inner -->
-		<div><!-- outer -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 home-jumbotron-container">
+					<div class="jumbotron home-jumbotron">
+						<div class="outer">
+							<div class="inner">
+								<div class="jumbotron-heading-container">
+									<span class="jumbotron-heading">Welcome To STS Luxury Inc</span>
+								</div>
+								<div>
+									<span class="jumbotron-subheading">Experts Providing NYC Transportation For Over 20 Years</span>
+								</div>
+								<div class="learn-more-container">
+									<button class="learn-more" id="home-learn-more">Learn More</button>
+								</div>
+							</div><!-- inner -->
+						</div><!-- outer -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="who-we-are">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12 first-half-title">
+						<span>STS Luxury Inc.</span>
+					</div><!-- SO FAR WE HAVE ADDED ABOUT FIRST HALF AND THE JQUERY SCROLL TO FUNCTION -->
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<img src="images/sts-brand.png" class="who-section-logo">
+					</div>
+					<div class="col-sm-6 who-section-description">
+						<h2>Who We Are</h2>
+						<span>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</span>
+					</div>
+					<a href="contact.html"><button class="who-section-contact">Contact Us!</button></a>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<button type="button" class="btn btn-default about-button black-about-button" aria-label="Left Align" id="goto-selling-points">
+  							<span class="glyphicon glyphicon-chevron-down about-down"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div><!-- about-first-half CHANGE THESE NAMES LATER TO BETTER CORRESPOND THE SECTION-->
+		<div class="three-selling-points">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4 selling-point">
+						<div class="selling-point-title"><span class="selling-point-title">Experience</span></div>
+						<span class="glyphicon glyphicon-thumbs-up selling-point-glyphicon"></span>
+						<div class="selling-point-description"><span>Our staff is made up of industry leaders with over 20 years experience</span></div>
+					</div>
+					<div class="col-sm-4 selling-point">
+						<div class="selling-point-title"><span class="selling-point-title">Affordability</span></div>
+						<span class="glyphicon glyphicon-usd selling-point-glyphicon"></span>
+						<div class="selling-point-description"><span>We know what's too expensive and just right. We have just the right pricing for you.</span></div>
+					</div>
+					<div class="col-sm-4 selling-point">
+						<div class="selling-point-title"><span class="selling-point-title">Fast</span></div>
+						<span class="glyphicon glyphicon-flash selling-point-glyphicon"></span>
+						<div class="selling-point-description"><span>We always hold ourselves to the highest standards of service for you.</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
+
+	<footer>
+		<div class="container-fluid footer">
+			<div class="row">
+				<div class="col-sm-6">
+					<a href="index.html"><img src="images/sts-brand.png" class="logo"></a>
+					<span class="call-tag">Call 777-777-7777 (Se Habla Espa&#241ol)</span>
+				</div>
+				<div class="col-sm-6 footer-links">
+						<a href="index.html">Home |</a>
+						<a href="about.html">About |</a>
+						<a href="contact.html">Contact |</a>
+						<a href="login.html">Login</a>
+						<div class="copyright"><span>&copy; STS Luxuries Inc 2017</span></div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/unauthorizedClient.js"></script>
 </body>
 </html>
