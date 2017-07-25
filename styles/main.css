@@ -6,7 +6,7 @@ main, nav {
 	font-family: 'Raleway', sans-serif;
 }
 
-form, fieldset, input {
+form, input {
 	border: 0;
 }
 
@@ -103,15 +103,27 @@ static pages styling
 	vertical-align: middle;
 }
 
+.title-size {
+	font-size: 2em;
+}
+
+.subtitle-size {
+	font-size: 1.25em;
+}
+
+.pad-top {
+	padding-top: 50px;
+}
+
 .jumbotron-heading-container {
 	margin-bottom: 10px;
 }
 
-.jumbotron-heading, .upper {
+.jumbotron-heading {
 	font-size: 2em;
 }
 
-.jumbotron-subheading, .lower {
+.jumbotron-subheading {
 	font-size: 1.25em;
 }
 
@@ -167,14 +179,6 @@ button.black-about-button > span.about-down {
 	font-size: 2em;
 }
 
-#second-about-button {
-	display: none;
-}
-
-.who-section-contact {
-	display: none;
-}
-
 .three-selling-points {
 	padding-top: 20px;
 	background-color: #ffe200;
@@ -193,7 +197,7 @@ button.black-about-button > span.about-down {
 	font-size: 1.65em;
 }
 
-.selling-point-glyphicon {
+.selling-point-glyphicon, .fact-glyphicon {
 	background-color: #373737;
 	color: white;
 	height: 65px;
@@ -238,42 +242,14 @@ button.black-about-button > span.about-down {
 	margin-bottom: 20px;
 }
 
-.meet-lts {
-	color: black;
-	background-color: #ffe200;
-	border: 0;
-	width: 40%;
-	height: 30px;
-	margin-top: 20px;
-}
-
 .where-story-pg {
 	margin-top: 20px;
-}
-
-.title-size {
-	font-size: 2em;
-}
-
-.subtitle-size {
-	font-size: 1.25em;
 }
 
 .facts {
 	background: #ffe200;
 	text-align: center;
 }
-
-.fact-glyphicon {
-	background-color: #373737;
-	color: white;
-	height: 65px;
-	width: 65px;
-	border-radius: 100%;
-	font-size: 30px;
-	padding-top: 14.5px;
-}
-
 
 .fact-glyphicon-container, .fact-title-container, .fact-subtitle-container {
 	margin-bottom: 20px;	
@@ -356,15 +332,15 @@ button.black-about-button > span.about-down {
 	}
 
 
-	.jumbotron-heading {
+	.jumbotron-heading, .title-size {
 		font-size: 3.5em;
 	}
 
-	.jumbotron-subheading {
+	.jumbotron-subheading, .subtitle-heading {
 		font-size: 2em;
 	}
 
-	.main-welcoming, .about-intro, .who-we-are > span {
+	.who-we-are > span {
 		font-size: 5em;
 	}
 
@@ -401,7 +377,6 @@ button.black-about-button > span.about-down {
 		display: inline;
 	}
 
-
 	.who-section-contact {
 		display: inline-block;
 		width: 15%;
@@ -422,18 +397,6 @@ button.black-about-button > span.about-down {
 
 	.footer-links {
 		padding-right: 35px;
-	}
-
-	.contact-container {
-		width: 40%;
-	}
-
-	form.contact-form button {
-		width: 35%;
-	}
-
-	.xs-title {
-		display: none;
 	}
 
 	.component-title {
@@ -462,14 +425,4 @@ button.black-about-button > span.about-down {
 	.selling-point-description {
 		font-size: 1.50em;
 	}
-
-	.contact-form-container {
-		width: 65%;
-		margin: 0 auto;
-	}
-
-	form.contact-form textarea {
-		width: 250px;
-	}
-
 }
