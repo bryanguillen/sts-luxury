@@ -399,9 +399,6 @@ button.black-about-button > span.about-down {
 		padding-right: 35px;
 	}
 
-	.component-title {
-		font-size: 4em;
-	}
 }
 
 @media screen and (min-width: 1200px) {
