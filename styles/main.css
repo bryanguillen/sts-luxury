@@ -59,8 +59,8 @@ ul#home-nav-list a:hover:before, ul.unauthenticated-nav-list a:hover:before {
 
 div.home-jumbotron-container {
 	background: linear-gradient(
-      				rgba(0, 0, 0, 0.7),
-      				rgba(0, 0, 0, 0.7)
+      				rgba(0, 0, 0, 0.6),
+      				rgba(0, 0, 0, 0.6)
     			), url('../images/jumbotron-mobile.jpg');
 }
 
@@ -334,8 +334,8 @@ button.black-about-button > span.about-down {
 
 	div.home-jumbotron-container {
 		background: linear-gradient(
-      				rgba(0, 0, 0, 0.9),
-      				rgba(0, 0, 0, 0.9)
+      				rgba(0, 0, 0, 0.6),
+      				rgba(0, 0, 0, 0.6)
     			), 
 				url('../images/jumbotron.jpg');
 		background-position: center;
