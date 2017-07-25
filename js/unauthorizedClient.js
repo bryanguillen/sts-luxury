@@ -1,7 +1,7 @@
 //DOM manipulation 
 
 //even listeners
-$('#home-learn-more').on('click', function (event) {
+$('#home-scroll-down').on('click', function (event) {
 	event.preventDefault();
 	$('html, body').animate({
 		scrollTop: $('.who-we-are').offset().top

@@ -56,19 +56,31 @@ ul#home-nav-list a:hover:before, ul.unauthenticated-nav-list a:hover:before {
   transform: scaleX(1);
 }
 
+
 div.home-jumbotron-container {
-	padding: 0;
+	background: linear-gradient(
+      				rgba(0, 0, 0, 0.7),
+      				rgba(0, 0, 0, 0.7)
+    			), url('../images/jumbotron-mobile.jpg');
+}
+
+
+div.about-jumbotron-container {
 	background: linear-gradient(
       				rgba(0, 0, 0, 0.5),
       				rgba(0, 0, 0, 0.5)
-    			),
-				url('../images/jumbotron-mobile.jpg');
+    			), url('../images/about-jumbotron.jpg');
+}
+
+
+div.home-jumbotron-container, div.about-jumbotron-container {
+	padding: 0;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-div.home-jumbotron {
+div.home-jumbotron, div.about-jumbotron {
 	background: transparent;
 	color: white;
 	height: 400px;
@@ -86,6 +98,7 @@ static pages styling
 .outer {
 	display: table;
 	height: 100%;
+	width: 100%;
 }
 
 .inner {
@@ -97,19 +110,19 @@ static pages styling
 	margin-bottom: 10px;
 }
 
-.jumbotron-heading {
+.jumbotron-heading, .upper {
 	font-size: 2em;
 }
 
-.jumbotron-subheading {
+.jumbotron-subheading, .lower {
 	font-size: 1.25em;
 }
 
-.learn-more-container {
+.scroll-down-container {
 	text-align: center;
 }
 
-.learn-more {
+.scroll-down {
 	color: black;
 	background-color: #ffe200;
 	border: 0;
@@ -118,7 +131,7 @@ static pages styling
 	margin-top: 20px;
 }
 
-.learn-more:hover {
+.scroll-down:hover {
 	background-color: #586300;
 }
 
@@ -165,7 +178,7 @@ button.black-about-button > span.about-down {
 	display: none;
 }
 
-.three-selling-points {
+.three-selling-points, .what-where {
 	padding-top: 20px;
 	background-color: #ffe200;
 	color: #373737;
@@ -216,25 +229,6 @@ button.black-about-button > span.about-down {
 	color: #ffe200;
 }
 
-.contact-outer {
-	background: #373737;
-	color: white;
-	width: 100vw;
-	background: linear-gradient(
-      				rgba(0, 0, 0, 0.8),
-      				rgba(0, 0, 0, 0.8)
-    			),
-				url('../images/about-background.jpg');	
-}
-
-.contact-container {
-	background: white;
-	margin: 0 auto;
-	width: 100%;
-	padding-left: 15px;
-	padding-bottom: 30px;
-}
-
 .form-heading {
 	font-size: 0;
 }
@@ -261,43 +255,58 @@ button.black-about-button > span.about-down {
 	text-align: center;
 }
 
-form.contact-form tr {
-	height: 20px; 
-}
-
-form.contact-form label {
-	color: black;
-	width: 100px;
-}
-
-form.contact-form textarea {
-	border: 0;
-}
-
-form.contact-form label, form.contact-form input {
-	margin-bottom: 10px;
-}
-
-form.contact-form input, form.contact-form textarea {
-	color: black;
-	padding: 10px 10px;
-}
-
-form.contact-form input {
-	border-bottom: 1px solid black;
-}
-
-form.contact-form button {
-	color: black;
-	border: 0;
-	background: #ffe200;
-	width: 30%;
-	height: 35px;
-}
-
-.contact-button-container {
+.what-where {
 	text-align: center;
-	margin-top: 20px;
+}
+
+.title-size {
+	font-size: 2em;
+}
+
+.subtitle-size {
+	font-size: 1.25em;
+}
+
+.timeline {
+	background: #373737;
+}
+
+/*.story-component {
+	height: 90vh;
+	text-align: center;
+}
+
+.story-yellow {
+	background: #ffe200;
+}
+
+.story-grey {
+	background: #373737;
+	color: white;
+}
+
+.circular-image {
+	border-radius: 100%;
+}
+
+.xs-title {
+	font-size: 2em;
+}
+
+.component-title {
+	font-size: 0;
+}
+
+.center-button {
+	text-align: center;
+}
+*/
+@media screen and (max-width: 768px) {
+	.our-story-image {
+		height: 200px;
+		width: 300px;
+	}
+
 }
 
 @media screen and (min-width: 768px) {
@@ -316,13 +325,18 @@ form.contact-form button {
 		background-repeat: no-repeat;
 	}	
 
-	div.home-jumbotron {
-		height: 500px;
+	div.home-jumbotron, div.about-jumbotron {
+		height: 450px;
 	}
 
-	.learn-more-container {
+	.scroll-down-container {
 		text-align: left;
 	}
+
+	.scroll-down {
+		width: 15%;
+	}
+
 
 	.jumbotron-heading {
 		font-size: 3.5em;
@@ -400,17 +414,16 @@ form.contact-form button {
 		width: 35%;
 	}
 
+	.xs-title {
+		display: none;
+	}
+
+	.component-title {
+		font-size: 4em;
+	}
 }
 
 @media screen and (min-width: 1200px) {
-	.sub-welcoming {
-		font-size: 3em;
-	}
-
-	.about-sub-intro {
-		font-size: 2em;
-	}
-
 	ul#home-nav-list, div.unauthenticated-collapse > ul.unauthenticated-nav-list {
 		margin-right: 125px;
 	}
@@ -419,6 +432,9 @@ form.contact-form button {
 		margin-left: 100px;
 	}
 
+	div.home-jumbotron {
+		height: 550px;
+	}
 
 	.selling-point-title {
 		font-size: 2em;
