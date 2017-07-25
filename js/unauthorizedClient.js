@@ -14,3 +14,5 @@ $('#goto-selling-points').on('click', function (event) {
 		scrollTop: $('.three-selling-points').offset().top
 	}, 2000)
 })
+
+//practice run for getting the argument dynamically.
