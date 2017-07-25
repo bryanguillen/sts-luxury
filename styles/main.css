@@ -66,10 +66,7 @@ div.home-jumbotron-container {
 
 
 div.about-jumbotron-container {
-	background: linear-gradient(
-      				rgba(0, 0, 0, 0.5),
-      				rgba(0, 0, 0, 0.5)
-    			), url('../images/about-jumbotron.jpg');
+	background: url('../images/about-jumbotron.jpg');
 }
 
 
@@ -131,7 +128,7 @@ static pages styling
 	margin-top: 20px;
 }
 
-.scroll-down:hover {
+.scroll-down:hover, .meet-lts:hover {
 	background-color: #586300;
 }
 
@@ -157,7 +154,7 @@ button.black-about-button > span.about-down {
 	padding-bottom: 50px;
 }
 
-.who-section-logo {
+.who-section-logo, .what-section-image {
 	height: 350px;
 	width: 350px;
 }
@@ -178,7 +175,7 @@ button.black-about-button > span.about-down {
 	display: none;
 }
 
-.three-selling-points, .what-where {
+.three-selling-points {
 	padding-top: 20px;
 	background-color: #ffe200;
 	color: #373737;
@@ -255,8 +252,29 @@ button.black-about-button > span.about-down {
 	text-align: center;
 }
 
+.story {
+	padding: 40px 5px;
+}
+
 .what-where {
 	text-align: center;
+}
+
+.what-section-title {
+	margin-bottom: 20px;
+}
+
+.meet-lts {
+	color: black;
+	background-color: #ffe200;
+	border: 0;
+	width: 40%;
+	height: 30px;
+	margin-top: 20px;
+}
+
+.where-story-pg {
+	margin-top: 20px;
 }
 
 .title-size {
@@ -267,8 +285,29 @@ button.black-about-button > span.about-down {
 	font-size: 1.25em;
 }
 
-.timeline {
-	background: #373737;
+.facts {
+	background: #ffe200;
+	text-align: center;
+}
+
+.fact-glyphicon {
+	background-color: #373737;
+	color: white;
+	height: 65px;
+	width: 65px;
+	border-radius: 100%;
+	font-size: 30px;
+	padding-top: 14.5px;
+}
+
+
+.fact-glyphicon-container, .fact-title-container, .fact-subtitle-container {
+	margin-bottom: 20px;	
+}
+
+.for-you {
+	text-align: center;
+	background: #ffe200;
 }
 
 /*.story-component {
@@ -432,7 +471,7 @@ button.black-about-button > span.about-down {
 		margin-left: 100px;
 	}
 
-	div.home-jumbotron {
+	div.home-jumbotron, div.about-jumbotron {
 		height: 550px;
 	}
 
