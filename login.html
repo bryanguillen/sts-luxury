@@ -21,15 +21,14 @@
         		<span class="icon-bar"></span>
       			</button>
       			<a href="index.html"><img src="images/sts-brand.png" class="logo"></a>
-      			<span class="call-tag">Call 777-777-7777 (Se Habla Espa&#241ol)</span>
+      			<span class="call-tag">Call 777-777-7777</span>
     		</div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     		<div class="collapse navbar-collapse unauthenticated-collapse" id="bs-example-navbar-collapse-1">
       			<ul class="nav navbar-nav navbar-right unauthenticated-nav-list"><!-- all static pgs except the home page -->
         			<li><a href="index.html">Home</a></li>
-        			<li><a href="about.html">About</a></li>
-        			<li><a href="contact.html">Contact</a></li>
+        			<li><a href="story.html">About</a></li>
         			<li><a href="login.html">Login</a></li>
       			</ul>
     		</div><!-- /.navbar-collapse -->
@@ -37,37 +36,38 @@
 	</nav>
 
 	<main>
-		<div class="outer contact-outer">
-			<div class="inner">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="contact-container">
-							<div class="form-heading">
-								<div class="form-title"><span>Login</span></div>
-								<div class="form-logo"><img src="images/sts-brand.png"></div>
+		<div class="authentication-container">
+			<div class="outer authentication-outer">
+				<div class="inner">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-12 authentication-logo">
+								<img src="images/sts-brand.png" class="logo">
 							</div>
-							<div class="contact-form-container">
-								<form class="contact-form">
-									<fieldset name="contact-sts">
-										<table>
-											<tr>
-												<td><label for="email">Email</label></td>
-												<td><input type="text" name="email" placeholder="foo@bar.com" required/></td>
-											</tr>
-											<tr>
-												<td><label for="password">Password</label></td>
-												<td><input type="password" name="password" placeholder="John" required/></td>
-											</tr>
-										</table>
-									</fieldset>
-									<div class="contact-button-container"><button class="submit-contact" type="submit">Login</button></div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6  col-sm-offset-3">
+								<form class="login-form authentication-form">
+									<table>
+										<tr class="authentication-form-row">
+											<td><label class="authentication-label" for="username">Username</label></td>
+											<td><input type="text" name="username" placeholder="albertog123" class="authentication-input"></td>
+										</tr>
+										<tr class="authentication-form-row">
+											<td><label class="authentication-label" for="password">Password</label></td>
+											<td><input type="password" name="password" placeholder="helloWorld!@#" class="authentication-input"></td>
+										</tr>
+									</table>
+									<div>
+										<button class="authenticate-button" id="login">Login</button>
+									</div>	
 								</form>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>	
+			</div>	
+		</div>
 	</main>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>

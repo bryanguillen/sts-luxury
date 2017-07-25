@@ -226,32 +226,6 @@ button.black-about-button > span.about-down {
 	color: #ffe200;
 }
 
-.form-heading {
-	font-size: 0;
-}
-
-.form-title > span {
-	color: black;
-	font-size: 20px;
-}
-
-.form-logo {
-	padding-top: 25px;
-	padding-bottom: 25px; 	
-}
-
-.form-logo > img {
-	width: 75px;
-	height: 75px;
-}
-
-.form-title, .form-logo {
-	display: inline-block;
-	width: 50%;
-	height: 100px;
-	text-align: center;
-}
-
 .story {
 	padding: 40px 5px;
 }
@@ -310,36 +284,41 @@ button.black-about-button > span.about-down {
 	background: #ffe200;
 }
 
-/*.story-component {
-	height: 90vh;
+/*authentication pages*/
+.authentication-outer {
+	height: 75vh;
+}
+
+.authentication-logo {
 	text-align: center;
+	margin-bottom: 35px;
 }
 
-.story-yellow {
-	background: #ffe200;
+.authentication-form {
+	border: 0;
+	padding-left: 25px;
 }
 
-.story-grey {
-	background: #373737;
-	color: white;
+.authentication-label {
+	width: 75px;
 }
 
-.circular-image {
-	border-radius: 100%;
+.authentication-label, .authentication-input {
+	margin-bottom: 15px;
 }
 
-.xs-title {
-	font-size: 2em;
+.authenticate-button {
+	border: 0;
+	background-color: #ffe200;
+	color: black;
+	width: 35%;
+	margin-top: 15px;
 }
 
-.component-title {
-	font-size: 0;
+.authenticate-button:hover {
+	background-color: #373737;
 }
 
-.center-button {
-	text-align: center;
-}
-*/
 @media screen and (max-width: 768px) {
 	.our-story-image {
 		height: 200px;
@@ -355,8 +334,8 @@ button.black-about-button > span.about-down {
 
 	div.home-jumbotron-container {
 		background: linear-gradient(
-      				rgba(0, 0, 0, 0.7),
-      				rgba(0, 0, 0, 0.7)
+      				rgba(0, 0, 0, 0.9),
+      				rgba(0, 0, 0, 0.9)
     			), 
 				url('../images/jumbotron.jpg');
 		background-position: center;
