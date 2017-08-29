@@ -17,6 +17,12 @@ nav.unauthenticated-navbar {
 	background: white;
 	color: black;
 	margin-bottom: 0;
+	height: 100px; 
+}
+
+nav .navbar-header, nav .collapse {
+	height: 100px;
+	padding-top: 25px;
 }
 
 ul#home-nav-list a {
@@ -28,7 +34,6 @@ ul#home-nav-list a, div.unauthenticated-collapse > ul.unauthenticated-nav-list a
 	color: black;
 }
 
-/** Below we use direct child for the second ruleset of div.unauthenticated..... for speficity **/
 ul#home-nav-list a:hover, div.unauthenticated-collapse > ul.unauthenticated-nav-list a:hover {
 	color: #ffe200;
 	background: transparent;
@@ -299,6 +304,10 @@ button.black-about-button > span.about-down {
 	.our-story-image {
 		height: 200px;
 		width: 300px;
+	}
+
+	.logo {
+		margin-left: 10px;
 	}
 
 }
