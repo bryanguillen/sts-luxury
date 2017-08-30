@@ -133,7 +133,7 @@ static pages styling
 }
 
 .description-size {
-	font-size: 1.50em;
+	font-size: 1.25em;
 }
 
 .pad-top {
@@ -226,10 +226,6 @@ button.black-about-button > span.about-down {
 	margin-bottom: 15px;
 }
 
-.selling-point-title {
-	font-size: 1.65em;
-}
-
 .selling-point-glyphicon, .fact-glyphicon {
 	background-color: #373737;
 	color: white;
@@ -238,10 +234,6 @@ button.black-about-button > span.about-down {
 	border-radius: 100%;
 	font-size: 30px;
 	padding-top: 14.5px;
-}
-
-.selling-point-description {
-	font-size: 1.25em;
 }
 
 .footer {
@@ -445,15 +437,6 @@ button.black-about-button > span.about-down {
 
 	nav > div.container-fluid .navbar-header {
 		margin-left: 100px;
-	}
-
-	.selling-point-title {
-		font-size: 2em;
-	}
-
-
-	.selling-point-description {
-		font-size: 1.50em;
 	}
 
 	.contact-content-container {
