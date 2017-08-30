@@ -42,32 +42,15 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-12">
-					<form method="post" action="/signup" class="contact-form">
-						<fieldset name="contact-form">
-							<div class="row">
-								<div class="col-sm-3">
-									<label for="email" class="contact-label subtitle-size">Email</label>
-								</div>
-								<div class="col-sm-9">
-									<input type="text" name="email" placeholder="foo@bar.com" class="contact-field" required/>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-3">
-									<label for="message" class="contact-label subtitle-size">Message</label>
-								</div>
-								<div class="col-sm-9">
-									<textarea class="message" placeholder="I am interested in your services" class="contact-field" name="message"></textarea>
-								</div>
-							</div>
-						</fieldset>
-						<div class="row">
-							<div class="col-sm-12">
-								<button type="submit" class="contact-button">Send</button>
-							</div>
-						</div>
-					</form>
+				<div class="col-sm-6 contact-information-container">
+					<div class="title-size">New York Office</div>
+					<div>Street Address</div>
+					<div>Bronx, NY 10472</div>
+					<div>Phone (917)-885-3007</div>
+					<div><a href="mailto=mrguillen@gmail.com?subject=STS Inquiry">mrguillen@gmail.com</a></div>
+				</div>
+				<div class="col-sm-6 google-map-container">
+					<div id="map"></div>
 				</div>
 			</div>
 		</div>
@@ -90,7 +73,20 @@
 	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/unauthorizedClient.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script>
+		function initMap() {
+        	var uluru = {lat: -25.363, lng: 131.044};
+        	var map = new google.maps.Map(document.getElementById('map'), {
+        	  zoom: 4,
+        	  center: uluru
+        	});
+        	var marker = new google.maps.Marker({
+        	  position: uluru,
+        	  map: map
+        	});
+      	}
+	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnKKADgD4Wwndh99XZ6aqLkUlL1dMVbIY&callback=initMap"></script>
 </body>
 </html>

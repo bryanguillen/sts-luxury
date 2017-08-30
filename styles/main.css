@@ -244,16 +244,6 @@ button.black-about-button > span.about-down {
 	font-size: 1.25em;
 }
 
-.contact-page-container {
-	background-color: #ffe200;
-	height: 100vh;
-	padding-top: 25px;
-}
-
-.contact-title-container {
-	text-align: center;
-}
-
 .footer {
 	background-color: #373737;
 	padding: 20px 15px;
@@ -304,12 +294,22 @@ button.black-about-button > span.about-down {
 	background: #ffe200;
 }
 
-.contact-label {
-	line-height: 55px;
+.contact-page-container {
+	padding-top: 25px;
 }
 
-.contact-field {
-	height: 35px;
+.contact-title-container {
+	text-align: center;
+}
+
+.contact-information-container {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#map {
+	height: 300px;
+	width: 300px;
 }
 
 @media screen and (max-width: 768px) {
