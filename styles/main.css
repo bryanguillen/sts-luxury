@@ -337,7 +337,7 @@ button.black-about-button > span.about-down {
 	}	
 
 	div.home-jumbotron, div.about-jumbotron {
-		height: 450px;
+		height: 700px;
 	}
 
 	.scroll-down-container {
@@ -425,10 +425,6 @@ button.black-about-button > span.about-down {
 
 	nav > div.container-fluid .navbar-header {
 		margin-left: 100px;
-	}
-
-	div.home-jumbotron, div.about-jumbotron {
-		height: 700px;
 	}
 
 	.selling-point-title {
