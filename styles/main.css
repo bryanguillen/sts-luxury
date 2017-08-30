@@ -296,10 +296,15 @@ button.black-about-button > span.about-down {
 
 .contact-page-container {
 	padding-top: 25px;
+	padding-bottom: 15px;
 }
 
 .contact-title-container {
 	text-align: center;
+}
+
+.contact-content-container {
+	padding-top: 10%;
 }
 
 .contact-information-container {
@@ -424,6 +429,13 @@ button.black-about-button > span.about-down {
 		padding-right: 35px;
 	}
 
+	.contact-page-container {
+		height: 85vh;
+	}
+
+	.contact-content-container {
+		padding-left: 15px;
+	}
 }
 
 @media screen and (min-width: 1200px) {
@@ -442,5 +454,14 @@ button.black-about-button > span.about-down {
 
 	.selling-point-description {
 		font-size: 1.50em;
+	}
+
+	.contact-content-container {
+		padding-top: 5%;
+		padding-left: 0;
+	}
+
+	#map {
+		width: 450px;		
 	}
 }
