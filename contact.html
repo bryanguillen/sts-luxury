@@ -45,12 +45,28 @@
 				<div class="col-sm-12">
 					<form method="post" action="/signup" class="contact-form">
 						<fieldset name="contact-form">
-							<label for="email">Email</label>
-							<input type="text" name="email" placeholder="foo@bar.com" required/>
-							<label for="message">Message</label>
-							<textarea class="message" placeholder="I am interested in your services" name="message"></textarea>
+							<div class="row">
+								<div class="col-sm-3">
+									<label for="email" class="contact-label subtitle-size">Email</label>
+								</div>
+								<div class="col-sm-9">
+									<input type="text" name="email" placeholder="foo@bar.com" class="contact-field" required/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3">
+									<label for="message" class="contact-label subtitle-size">Message</label>
+								</div>
+								<div class="col-sm-9">
+									<textarea class="message" placeholder="I am interested in your services" class="contact-field" name="message"></textarea>
+								</div>
+							</div>
 						</fieldset>
-						<button type="submit" class="contact-button">Send</button>
+						<div class="row">
+							<div class="col-sm-12">
+								<button type="submit" class="contact-button">Send</button>
+							</div>
+						</div>
 					</form>
 				</div>
 			</div>

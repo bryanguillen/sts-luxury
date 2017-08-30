@@ -304,6 +304,14 @@ button.black-about-button > span.about-down {
 	background: #ffe200;
 }
 
+.contact-label {
+	line-height: 55px;
+}
+
+.contact-field {
+	height: 35px;
+}
+
 @media screen and (max-width: 768px) {
 	.our-story-image {
 		height: 200px;
