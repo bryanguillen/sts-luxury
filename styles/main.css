@@ -185,6 +185,10 @@ button.black-about-button > span.about-down {
 	color: black;
 }
 
+.who-we-are {
+	padding-top: 20px;
+}
+
 .short-about-title-container, .short-about-subtitle {
 	text-align: center;
 }
@@ -197,17 +201,11 @@ button.black-about-button > span.about-down {
 	margin-bottom: 15px;
 }
 
-.who-we-are {
-	padding-top: 40px;
-	padding-bottom: 50px;
-}
-
 .short-about-container {
 	text-align: center;
 }
 
 .short-about-pic-container {
-	/*position: relative;*/
 	margin-top: 15px;
 }
 
@@ -378,10 +376,6 @@ button.black-about-button > span.about-down {
 		font-size: 2em;
 	}
 
-	.who-we-are > span {
-		font-size: 5em;
-	}
-
 	.find-out-more {
 		width: 25%;
 		height: 40px;
@@ -400,11 +394,6 @@ button.black-about-button > span.about-down {
 	button.about-button {
 		width: 15%;
 		margin-top: 50px;
-	}
-
-	.who-we-are {
-		height: 100vh;
-		padding-bottom: 0px;
 	}
 
 	.who-we-title {
@@ -447,10 +436,6 @@ button.black-about-button > span.about-down {
 }
 
 @media screen and (min-width: 1024px) {
-	.who-we-are {
-		height: 85vh;
-	}
-
 	.top-picture {
 		right: 20px;
 	}
