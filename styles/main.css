@@ -185,12 +185,12 @@ button.black-about-button > span.about-down {
 	color: black;
 }
 
-.short-about-title-container {
-	margin-bottom: 25px; 
+.short-about-title-container, .short-about-subtitle {
+	text-align: center;
 }
 
-.short-about-title {
-	font-size: 3em;
+.short-about-title-container {
+	margin-bottom: 25px; 
 }
 
 .short-about-subtitle {
@@ -198,18 +198,34 @@ button.black-about-button > span.about-down {
 }
 
 .who-we-are {
-	text-align: center;
 	padding-top: 40px;
 	padding-bottom: 50px;
 }
 
-.short-about-logo-container {
+.short-about-container {
+	text-align: center;
+}
+
+.short-about-pic-container {
+	/*position: relative;*/
 	margin-top: 15px;
 }
 
-.short-about-logo, .what-section-image {
+.short-about-pic, .what-section-image {
 	height: 350px;
 	width: 350px;
+}
+
+.top-picture {
+	z-index: 5;	
+	position: relative;
+	right: 5px;
+}
+
+.bottom-picture {
+	position: relative;
+	bottom: 100px;
+	left: 5px;
 }
 
 .three-selling-points {
@@ -429,6 +445,16 @@ button.black-about-button > span.about-down {
 		padding-left: 15px;
 	}
 }
+
+@media screen and (min-width: 1024px) {
+	.who-we-are {
+		height: 85vh;
+	}
+
+	.top-picture {
+		right: 20px;
+	}
+} 
 
 @media screen and (min-width: 1200px) {
 	ul#home-nav-list, div.unauthenticated-collapse > ul.unauthenticated-nav-list {
