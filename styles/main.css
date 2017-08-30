@@ -13,6 +13,10 @@ form, input {
 /********* 
 	Override default styling for bootstrap
 **********/
+nav {
+	z-index: 100;
+}
+
 nav.unauthenticated-navbar {
 	background: white;
 	color: black;
@@ -22,6 +26,10 @@ nav.unauthenticated-navbar {
 
 nav .navbar-header, nav .collapse {
 	height: 100px;
+}
+
+.navbar-header {
+	z-index: 100;
 	padding-top: 25px;
 }
 
@@ -62,6 +70,10 @@ ul#home-nav-list a:hover:before, ul.unauthenticated-nav-list a:hover:before {
 }
 
 
+ul.unauthenticated-nav-list {
+	margin-top: 0;
+}
+
 div.home-jumbotron-container {
 	background: linear-gradient(
       				rgba(0, 0, 0, 0.6),
@@ -87,6 +99,10 @@ div.home-jumbotron, div.about-jumbotron {
 	color: white;
 	height: 400px;
 	margin-bottom: 0px;
+}
+
+.mobile-white {
+	background-color: white;
 }
 
 /*******
@@ -303,6 +319,10 @@ button.black-about-button > span.about-down {
 @media screen and (min-width: 768px) {
 	#home-navbar li {
 		font-size: 1.2em;
+	}
+
+	nav .navbar-header, nav .collapse {
+		padding-top: 25px;
 	}
 
 	div.home-jumbotron-container {
