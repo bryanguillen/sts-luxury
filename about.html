@@ -62,10 +62,10 @@
 							<span class="glyphicon glyphicon-user fact-glyphicon"></span>
 						</div>
 						<div class="fact-title-container">
-							<span class="title-size">The Oirignal Five</span>							
+							<span class="subtitle-size">The Orignal Five</span>							
 						</div>
 						<div class="fact-subtitle-container">
-							<span class="subtitle-size">STS was started by five people! In fact lorem ipsum lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ......</span>							
+							<span class="description-size">STS was started by five people! In fact  ......</span>							
 						</div>
 					</div >
 					<div class="col-sm-4">
@@ -73,10 +73,10 @@
 							<span class="glyphicon glyphicon-road fact-glyphicon"></span>
 						</div>
 						<div class="fact-title-container">
-							<span class="title-size">Time On Road</span>
+							<span class="subtitle-size">Time On Road</span>
 						</div>
 						<div class="fact-subtitle-container">
-							<span class="subtitle-size">STS staff each have a whopping minimum of XXXX amount of hours over the years on the road lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum .</span>
+							<span class="description-size">STS staff each have a whopping minimum of XXXX.</span>
 						</div>
 					</div>
 					<div class="col-sm-4">
@@ -84,10 +84,10 @@
 							<span class="glyphicon glyphicon-eye-open fact-glyphicon"></span>
 						</div>
 						<div class="fact-title-container">
-							<span class="title-size">Eye On The Prize</span>
+							<span class="subtitle-size">Eye On The Prize</span>
 						</div>
 						<div class="fact-subtitle-container">
-							<span class="subtitle-size">STS drivers have been solely focused on working in the NYC area for the past couple of decades lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum .</span>
+							<span class="description-size">STS drivers have been solely focused on working in the NYC...</span>
 						</div>
 					</div>
 				</div>
@@ -98,7 +98,7 @@
 				<div class="row">				
 					<div class="col-sm-6 col-sm-offset-3 what-story-pg">
 						<div class="what-section-title">
-							<em><span class="title-size">What do we do and how did we start? Actually, it's really simple. LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM V LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM</span></em>
+							<em><span class="subtitle-size">What do we do and how did we start? Actually, it's really simple. LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM V LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM</span></em>
 						</div>
 						<div class="sts-logo">
 							<a href="index.html"><img src="images/sts-brand.png" class="logo"></a>
@@ -107,14 +107,15 @@
 				</div>
 			</div>
 		</div>
-		<div class="for-you story">
+		<div class="five-boroughs-container">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-sm-5">
-						<span class="title-size">We are happy and proud to be serving all 5 boroughs of NYC and the tristate area for good.</span>
+					<div class="col-sm-5 borough-section-description">
+						<span class="subtitle-size">We are happy and proud to be serving all 5 boroughs of NYC and the tristate area for good.</span>
+						<span class="description-size">If you have a need for us, <a href="contact.html" class="reach-out">reach out</a>.</span>
 					</div>
-					<div class="col-sm-7 pad-top">
-						<span class="subtitle-size">Not only do we do ..... lorem ipsum, lorem ipsum lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum lorem ipsum  lorem ipsum  lorem ipsum lorem ipsum  lorem ipsum</span>
+					<div class="col-sm-7">
+						<div id="map" class="five-boroughs-map"></div>
 					</div>
 				</div>
 			</div>
@@ -141,5 +142,19 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script>
+		function initMap() {
+        	var uluru = {lat: 40.764526, lng: -73.978314};
+        	var map = new google.maps.Map(document.getElementById('map'), {
+        	  zoom: 7,
+        	  center: uluru
+        	});
+        	var marker = new google.maps.Marker({
+        	  position: uluru,
+        	  map: map
+        	});
+      	}
+	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnKKADgD4Wwndh99XZ6aqLkUlL1dMVbIY&callback=initMap"></script>
 </body>
 </html>
