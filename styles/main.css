@@ -66,7 +66,7 @@ div.home-jumbotron-container {
 	background: linear-gradient(
       				rgba(0, 0, 0, 0.6),
       				rgba(0, 0, 0, 0.6)
-    			), url('../images/jumbotron-mobile.jpg');
+    			), url('../images/jumbotron.jpg');
 }
 
 
@@ -109,11 +109,15 @@ static pages styling
 }
 
 .title-size {
-	font-size: 2em;
+	font-size: 2.5em;
 }
 
 .subtitle-size {
-	font-size: 1.25em;
+	font-size: 2em;
+}
+
+.description-size {
+	font-size: 1.50em;
 }
 
 .pad-top {
@@ -165,23 +169,31 @@ button.black-about-button > span.about-down {
 	color: black;
 }
 
+.short-about-title-container {
+	margin-bottom: 25px; 
+}
+
+.short-about-title {
+	font-size: 3em;
+}
+
+.short-about-subtitle {
+	margin-bottom: 15px;
+}
+
 .who-we-are {
 	text-align: center;
 	padding-top: 40px;
 	padding-bottom: 50px;
 }
 
-.who-section-logo, .what-section-image {
+.short-about-logo-container {
+	margin-top: 15px;
+}
+
+.short-about-logo, .what-section-image {
 	height: 350px;
 	width: 350px;
-}
-
-.who-section-description {
-	font-weight: bold;
-}
-
-.who-we-title {
-	font-size: 2em;
 }
 
 .three-selling-points {
@@ -216,6 +228,16 @@ button.black-about-button > span.about-down {
 	font-size: 1.25em;
 }
 
+.contact-page-container {
+	background-color: #ffe200;
+	height: 100vh;
+	padding-top: 25px;
+}
+
+.contact-title-container {
+	text-align: center;
+}
+
 .footer {
 	background-color: #373737;
 	padding: 20px 15px;
@@ -224,6 +246,7 @@ button.black-about-button > span.about-down {
 
 .footer-links {
 	text-align: right;
+	padding-top: 5px;
 }
 
 .footer-links a {
@@ -263,41 +286,6 @@ button.black-about-button > span.about-down {
 .for-you {
 	text-align: center;
 	background: #ffe200;
-}
-
-/*authentication pages*/
-.authentication-outer {
-	height: 75vh;
-}
-
-.authentication-logo {
-	text-align: center;
-	margin-bottom: 35px;
-}
-
-.authentication-form {
-	border: 0;
-	padding-left: 25px;
-}
-
-.authentication-label {
-	width: 75px;
-}
-
-.authentication-label, .authentication-input {
-	margin-bottom: 15px;
-}
-
-.authenticate-button {
-	border: 0;
-	background-color: #ffe200;
-	color: black;
-	width: 35%;
-	margin-top: 15px;
-}
-
-.authenticate-button:hover {
-	background-color: #373737;
 }
 
 @media screen and (max-width: 768px) {
