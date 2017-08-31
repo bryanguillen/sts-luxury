@@ -210,7 +210,7 @@ button.black-about-button > span.about-down {
 }
 
 .short-about-pic, .what-section-image {
-	height: 350px;
+	height: 325px;
 	width: 350px;
 }
 
@@ -329,7 +329,12 @@ button.black-about-button > span.about-down {
 }
 
 .five-boroughs-map {
-	margin: 0 auto;
+	margin: 10 auto;
+	padding-top: 15px;
+}
+
+.borough-section-description {
+	margin-bottom: 15px;
 }
 
 .reach-out {
@@ -450,10 +455,15 @@ button.black-about-button > span.about-down {
 
 	.borough-section-description {
 		padding-top: 40px;
+		padding-bottom: 15px;
 	}
 }
 
 @media screen and (min-width: 1024px) {
+	.short-about-description {
+		padding-top: 40px;
+	}
+
 	.top-picture {
 		right: 20px;
 	}
