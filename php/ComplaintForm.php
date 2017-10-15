@@ -10,21 +10,6 @@
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 <body>
-	<?php 
-		$message = "";
-		$to = "stsluxury@outlook.com";
-		$subject = "Complaint Submission | STS Luxury";
-		$data = array("name", "phone-number", "location", "complaint");
-
-		for ($i = 0; $i<4; $i++) {
-			$sumbittedFieldData = $data[$i];
-			if (strlen(trim($_POST[$sumbittedFieldData])) > 0) {
-				$message = $message . $sumbittedFieldData . ": " . $_POST[$sumbittedFieldData] . " \r\n"; 
-			} 
-		} 
-		
-		mail($to, $subject, $message);
-	?>
 
 	<nav class="navbar navbar-default unauthenticated-navbar">
 		<div class="container-fluid">
@@ -52,11 +37,70 @@
 	</nav>
 	
 	<main>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-sm-12">
-					<p>Thank you for your submission!</p>
-					<p>We value your business, and because of that, you will hear from us within 1-2 business days.</p>
+		<div class="container-fluid">	
+			<?php 
+				$validMsg = True;
+				$message = "";
+				$to = "stsluxury@outlook.com";
+				$subject = "Complaint Submission | STS Luxury";
+				$data = array("name", "phone-number", "location", "complaint");
+
+				if (strlen(trim($_POST["location"])) == 0 && strlen(trim($_POST["complaint"])) == 0) {
+					$validMsg = False;
+					echo "<div class=\"row\">
+						<div class=\"col-sm-12 complaint-form-title\">
+							<span>Complaint Form</span>
+						</div>
+						</div>
+						<div class=\"row\">
+							<div class=\"col-sm-6 col-sm-offset-3\">
+								<p>YOU MUST FILL IN THE REQUIRED FIELDS (*)</p>	
+								<form method=\"post\" action=\"<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>\">
+								<p>
+									<label for=\"name\">Name:</label>							
+								</p>
+								<p>
+									<input type=\"text\" name=\"name\" />
+								</p>
+								<p>
+									<label for=\"phone-number\">Phone Number:</label>
+								</p>
+								<p>
+									<input type=\"text\" name=\"phone-number\" />
+								</p>
+								<p>
+									<label for=\"location\">Location:</label>
+								</p>
+								<p>
+									<input type=\"text\" name=\"location\" required/>
+								</p>
+								<p>
+									<label for=\"complaint\">Complaint:</label>
+								</p>
+								<p>
+									<textarea name=\"complaint\" required></textarea>
+								</p>
+								<button type=\"submit\" class=\"complain-submit-button\">Submit</button>
+							</form>
+						</div>
+					</div>";
+				} else {
+					for ($i = 0; $i<4; $i++) {
+						$sumbittedFieldData = $data[$i];
+						if (strlen(trim($_POST[$sumbittedFieldData])) > 0) {
+							$message = $message . $sumbittedFieldData . ": " . $_POST[$sumbittedFieldData] . " \r\n"; 
+							} 
+						} 
+		
+						mail("bguillen95@gmail.com", $subject, $message);
+						echo "<div class=\"row\">
+								<div class=\"col-sm-12\" style=\"text-align: center;\">
+									<h1>Your complaint has sent!</h1>
+									<p>We shall respond in 1 - 2 business days!</p>
+								</div>
+							</div>";
+				}
+			?>				
 				</div>
 			</div>
 		</div>
