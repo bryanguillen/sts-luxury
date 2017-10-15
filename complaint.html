@@ -29,6 +29,7 @@
         			<li class="mobile-white"><a href="index.html">Home</a></li>
         			<li class="mobile-white"><a href="about.html">About</a></li>
         			<li class="mobile-white"><a href="contact.html">Contact</a></li>
+      				<li class="mobile-white"><a href="complaint.html">Complaint</a></li>
       			</ul>
     		</div>
   		</div>
@@ -43,7 +44,7 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-6 col-sm-offset-3">
-					<form method="post" action="complaint-form.php">
+					<form method="post" action="ComplaintForm.php">
 						<p>
 							<label for="name">Name:</label>							
 						</p>
@@ -60,13 +61,13 @@
 							<label for="location">Location:</label>
 						</p>
 						<p>
-							<input type="text" name="location" />
+							<input type="text" name="location" required/>
 						</p>
 						<p>
 							<label for="complaint">Complaint:</label>
 						</p>
 						<p>
-							<textarea name="complaint"></textarea>
+							<textarea name="complaint" required></textarea>
 						</p>
 						<button type="submit" class="complain-submit-button">Submit</button>
 					</form>
@@ -87,6 +88,8 @@
         				<a href="about.html">About</a>
 						<span>|</span>
         				<a href="contact.html">Contact</a>
+        				<span>|</span>
+        				<a href="complaint.html">Complaint</a>
 						<div class="copyright"><span>&copy; STS Luxury Inc 2017</span></div>
 				</div>
 			</div>
