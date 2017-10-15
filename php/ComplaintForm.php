@@ -92,7 +92,7 @@
 							} 
 						} 
 		
-						mail("bguillen95@gmail.com", $subject, $message);
+						mail($to, $subject, $message);
 						echo "<div class=\"row\">
 								<div class=\"col-sm-12 full-height\" style=\"text-align: center;\">
 									<h1>Your complaint has sent!</h1>
