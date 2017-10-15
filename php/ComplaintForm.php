@@ -37,7 +37,7 @@
 	</nav>
 	
 	<main>
-		<div class="container-fluid">	
+		<div class="container-fluid complaint-page-container">	
 			<?php 
 				$validMsg = True;
 				$message = "";
