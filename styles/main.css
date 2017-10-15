@@ -371,6 +371,11 @@ button.black-about-button > span.about-down {
 	width: 50%;
 }
 
+.complain-submit-button {
+	background-color: #ffe200;
+	border: 0;
+}
+
 /*********************
  MEDIA QUERIES
 *********************/
