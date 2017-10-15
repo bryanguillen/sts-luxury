@@ -350,6 +350,10 @@ button.black-about-button > span.about-down {
 	text-align: center;
 }
 
+.spam-protector {
+	display: none;
+}
+
 /*********************
  MEDIA QUERIES
 *********************/
