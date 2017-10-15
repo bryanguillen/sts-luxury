@@ -49,11 +49,11 @@
 					$validMsg = False;
 					echo "<div class=\"row\">
 						<div class=\"col-sm-12 complaint-form-title\">
-							<span>Complaint Form</span>
+							<h1>Complaint Form</h1>
 						</div>
 						</div>
 						<div class=\"row\">
-							<div class=\"col-sm-6 col-sm-offset-3\">
+							<div class=\"col-sm-6 col-sm-offset-3 full-height\">
 								<p>YOU MUST FILL IN THE REQUIRED FIELDS (*)</p>	
 								<form method=\"post\" action=\"<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>\">
 								<p>
@@ -94,7 +94,7 @@
 		
 						mail("bguillen95@gmail.com", $subject, $message);
 						echo "<div class=\"row\">
-								<div class=\"col-sm-12\" style=\"text-align: center;\">
+								<div class=\"col-sm-12 full-height\" style=\"text-align: center;\">
 									<h1>Your complaint has sent!</h1>
 									<p>We shall respond in 1 - 2 business days!</p>
 								</div>
