@@ -342,6 +342,18 @@ button.black-about-button > span.about-down {
 	color: black;
 }
 
+/*********************
+ COMPLAINT FORM STYLES
+*********************/
+
+.complaint-form-title {
+	text-align: center;
+}
+
+/*********************
+ MEDIA QUERIES
+*********************/
+
 @media screen and (max-width: 768px) {
 	.our-story-image {
 		height: 200px;
