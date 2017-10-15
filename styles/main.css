@@ -10,6 +10,11 @@ form {
 	border: 0;
 }
 
+textarea {
+	height: 150px;
+	resize: none;
+}
+
 /********* 
 	Override default styling for bootstrap
 **********/
@@ -346,12 +351,24 @@ button.black-about-button > span.about-down {
  COMPLAINT FORM STYLES
 *********************/
 
+.complaint-page-container {
+	padding-top: 35px;
+}
+
 .complaint-form-title {
 	text-align: center;
 }
 
 .spam-protector {
 	display: none;
+}
+
+.full-height {
+	height: 80vh;
+}
+
+.complaint-form-field {
+	width: 50%;
 }
 
 /*********************
@@ -366,6 +383,14 @@ button.black-about-button > span.about-down {
 
 	.logo {
 		margin-left: 10px;
+	}
+
+	.complaint-page-container {
+		padding-left: 30px;
+	}
+
+	.complaint-form-field {
+		width: 60%;
 	}
 
 }
