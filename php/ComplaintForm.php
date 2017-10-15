@@ -39,14 +39,12 @@
 	<main>
 		<div class="container-fluid complaint-page-container">	
 			<?php 
-				$validMsg = True;
 				$message = "";
 				$to = "stsluxury@outlook.com";
 				$subject = "Complaint Submission | STS Luxury";
 				$data = array("name", "phone-number", "location", "complaint");
 
-				if (strlen(trim($_POST["location"])) == 0 && strlen(trim($_POST["complaint"])) == 0) {
-					$validMsg = False;
+				if (strlen(trim($_POST["location"])) == 0 or strlen(trim($_POST["complaint"])) == 0) {
 					echo "<div class=\"row\">
 						<div class=\"col-sm-12 complaint-form-title\">
 							<h1>Complaint Form</h1>
@@ -55,7 +53,7 @@
 						<div class=\"row\">
 							<div class=\"col-sm-6 col-sm-offset-3 full-height\">
 								<p>YOU MUST FILL IN THE REQUIRED FIELDS (*)</p>	
-								<form method=\"post\" action=\"<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>\">
+								<form method=\"post\" action=\"" . htmlspecialchars($_SERVER["PHP_SELF"]) . "\"" . "
 								<p>
 									<label for=\"name\">Name:</label>							
 								</p>
